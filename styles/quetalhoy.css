@@ -1,0 +1,282 @@
+.container {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    width: 80%;    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    grid-gap: 0.8rem;
+}
+.item {
+    position: relative;
+    width: 100%;
+    height: 7.5rem;
+    border: 2px solid palevioletred;
+    border-radius: 20%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:auto ;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.image {
+    display: block;
+    position: relative;
+    left: 25%;
+    top:.6rem;
+    border: 0px solid #661f56;
+    border-radius: 50%;
+    bottom: .6rem;
+}
+.icon {
+  background:url('../images/pensando.png'); 
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  border-radius: 50%; 
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  position: relative; 
+  left: 70%;  
+  bottom: 5%;
+  cursor: pointer;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    background-color: #fdd999;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 20%;    
+    cursor: pointer;
+
+}
+
+.img-overlay {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: 2.5rem;
+    width: 100%;
+    opacity: 1;
+    border: 0px solid red;
+    cursor: pointer;
+  }
+
+.item:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+   }
+   
+   .overlay:hover .image-overlay {
+    bottom: 1.25rem;
+    height: 95%;
+    border: 0px solid red;
+   }
+
+   .text {
+    width: 80%;
+    white-space: normal;
+    text-justify:inter-ideograph;
+    color: rgb(235, 123, 12);
+    font-size: 1.25rem;
+    font-weight: 900;
+    position: absolute;
+    overflow: hidden;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.red{
+    background-image:url('../images/baddaytrans.png');
+    color: rgb(242, 48, 18);
+    border: 0px solid  rgb(176, 66, 42);   
+}
+.yellow{
+    background-image:url('../images/sadtrans.png');
+    color: rgb(249, 189, 10);
+    border: 0px solid  rgb(249, 137, 10);    
+}
+.green{
+    background-image:url('../images/goodtrans.png');
+    color: rgb(2, 70, 24);
+    border: 0px solid  rgb(18, 88, 39);    
+}
+.icon-frown{
+    width: 2rem;
+    font-size: 2rem;
+    margin-left: 20%;
+    bottom: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.icon-meh {
+    
+    width: 2rem;
+    font-size: 2rem;
+    bottom: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icon-laugh {
+    
+    background-image:'../images/goodtrans.png'; 
+    width: 2rem;
+    font-size: 2rem;
+    bottom: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+ .borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image:url('../images/border.png') 30 round;
+  }
+ .borderimg2 { 
+    border: 10px solid transparent;
+    border-image:url('../images/border.png') 30 stretch;
+ }
+ .selected {
+  border-style:dotted ;
+  border-width: 1px;
+ }
+
+ .modal-g {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  .modal-g:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal-container-g {
+    position: relative;
+    border: thick dotted rgb(235, 123, 12);
+    border-radius: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .modal-close-g {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3rem;
+    color: #fff;
+    background-color:rgb(235, 123, 12);
+    transition: background-color 300ms linear, transform 300ms ease-in-out;
+  }
+  .modal-body-g {
+      margin-top: 10px;
+      display:grid;
+      grid-template-columns: 30% 80%;
+  }
+ 
+  .img-logros {
+   width: 3rem;
+   height: 3rem;
+
+  }
+  .modal-body-g p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    min-height: 80px;
+  
+  }
+  .modal-body-g span {
+    margin-top: 20px;
+    margin-left:2px;
+    margin-bottom: 20px;
+ 
+  }
+  .modal-body-g a {
+    padding: 2px;
+    font-size: 1.2rem;
+    color: rgb(65, 144, 234);
+  }
+
+  .modal-close-g:hover {
+    background-color:rgb(241, 148, 55);;
+    transform: scale(1.2);
+  }
+ 
+  .modal-body-g .imgbg{
+    background-image:url('../images/goodday.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 10rem;
+    height:8.3rem ;
+    border: 0px;
+    cursor: pointer; 
+  }
+  .modal-title-g{
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    
+    .modal-container-g {
+      flex-direction: row;
+      height: 70vh;
+     }
+    .modal-body-g {
+        margin-top: 10px;
+        display:grid;
+        grid-template-rows: 50% 50% 50%;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    
+    .modal-container-g {
+     flex-direction: column;
+     width: 50%;
+     height: 70vh;
+    }
+    .modal-body-g {
+      margin-top: 10px;
+      display: flex;
+     flex-direction: column;
+         
+  }
+ 
+  }
+
+  

@@ -1,0 +1,174 @@
+
+.sidenav {
+    width: 180px;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    overflow:hidden;
+  }
+  .sidenav a {
+     padding: 0px 0px 0px 10px;
+     text-decoration: none;
+     font-size: 0.8rem;
+     color: #d89309;
+     transition: 0.3s;
+     display: block;
+     width: 100%;
+     border: 0px solid red;  
+  }
+  .sidenav a:hover {
+    color: #d06f14;
+  }
+  .sidenav .ico {
+    display: block;
+    font-size: 2rem;
+    padding-left: 0; 
+    top: 0;
+    width: 2rem;
+    float: left;
+    margin-right:.32em ;
+  }
+  .sidenav-text{
+    font-size: .8rem;
+    text-align: center;
+    align-items: center;
+    float:right;
+    width: 55%;
+    margin-top: .32rem;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 1.6em;
+    font-size: 2.2rem;
+    margin-left: .32rem;
+  }
+  #main , #header ,#footer{
+    transition: margin-left .5s;
+    padding: 10px;
+    margin-left: 180px;
+    border-bottom: 1px solid #cccccc ;
+  }
+  nav {
+    min-height:  100vh;
+    width: 180px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s;
+    padding-top: 3.8rem;
+    display: flex;
+    overflow:hidden;
+  }
+  nav ul {
+      list-style:none;
+  }
+  nav ul li {
+      float:left;
+      justify-content:left;
+      text-transform: uppercase;
+      width: 100%; 
+      display: flex;   
+      margin-bottom: 1.2em;
+  }
+  nav ul li a {
+      color:#bcc1c6;
+      padding:.7rem;
+      display:block;
+      text-decoration:none;    
+  }
+  nav ul li a:hover {
+     color: #f1f1f1;
+  }
+  nav ul li span {
+      margin-right:.9em;
+      margin-left: .1em;
+      padding-left: .7em;
+         
+  }
+  nav ul li p {
+      float:right;
+      width: 70%;
+      top: 0;
+      font-size: .9rem;
+      right: 5px;
+  }
+  
+  .brand{
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 3.2rem;  
+      align-items: center;
+      margin-top: 0.12rem;
+      background-color: #343a40;
+      border-bottom: 1px solid #68696b;	
+  }
+  .brand .brand-link {
+      padding: 0;
+      border-bottom: none;
+  }
+  .brand .brand-text{
+      display: flex;
+      align-items:center;
+      text-align: left;
+      font-size: 1.25rem;
+      color:#a8afb6;
+      margin-left: .2rem;
+      margin-right: .8rem;
+      margin-bottom: .5rem;
+      margin-top: 1.2rem;
+      float:right;
+  }
+  .brand .brand-image {
+      float: left;
+      line-height: .8;
+      margin-left: .5rem;
+      margin-right: .3rem;
+      margin-bottom: .5rem;
+      margin-top: 1rem;
+      max-height: 3.2rem;
+      width: 3.2rem;
+  }
+
+
+@media screen and (max-height: 450px) {
+    .sidenav  { padding-top: .9em;}
+    .sidenav a { font-size: 1em;}
+}
+   
+@media screen and (max-width: 640px)
+ {
+ html {
+        font-size: 80%;
+ }
+  .sidenav  {width: 0px;}
+  .sidenav .ico{
+   display: block;
+   align-content: center;
+   top: 0;
+ }
+  .sidenav .sidenav-text{
+   border: 0px solid rgb(0, 255, 51);
+   margin-top: 2px;
+   margin-left: 2px;
+   text-align: center;
+   width: 100%;
+  }
+
+  #header, #main, #footer {
+     margin-left: 0;     
+  }  
+ 
+}
+

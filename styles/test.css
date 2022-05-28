@@ -1,0 +1,264 @@
+.content-header {
+    justify-content: space-between;
+    top: 0px;
+}
+
+.content-header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.main-content h2,
+p,
+.test-component {
+    margin-left: .8rem;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.main-content {
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+.main-content h2 {
+    top: 0;
+    margin-top: 0;
+    border: 0px solid red;
+}
+
+.main-page-header {
+    display: block;
+    height: 5vh;
+    background: #fff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.test-component {
+    width: 70%;
+    margin-bottom: 3rem!important;
+    max-height: 15.5rem;
+     
+    margin: 0 0 0 0;
+}
+
+.test-component .question {
+    justify-content: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+    margin-right: 0.5rem;
+    width: 100%;
+}
+
+.test-component .q-text {
+    font-size: 1rem;
+    color: #212529;
+    font-weight: 500;
+    word-wrap: normal;
+    overflow: hidden;
+    width: 90%;
+    margin-top: .8rem;
+    margin-left: 0;
+    padding: 5px;
+    border: 0.5px solid grey;
+    background-color: #eee;
+    height: 5rem;
+}
+
+.test-nav {
+    position: relative;
+    justify-content: center;
+    margin: 20px 0px 2px 2px;
+    margin-left: 0rem;
+    width: 100%;
+    display: flex;
+}
+.test-nav .btn-back {
+    width: 4.2em;
+    height: 2.5em;
+    background-color: rgb(130, 127, 127);
+    color: #fff;
+    border-radius: 5%;
+    border-color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
+.test-nav .btn-continue {
+    width: 4.2em;
+    height: 2.5em;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 5%;
+    border-color: #fff;
+    border: 0px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.test-nav .btn-response {
+    width: 4.2em;
+    height: 2.5em;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 5%;
+    border-color: #fff;
+    border: 0px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.test-nav .btn-response:disabled {
+
+    width: 4.2em;
+    height: 2.5em;
+    color: #fff;
+    border-radius: 5%;
+    border-color: #fff;
+    margin-left: 3px;
+    cursor: not-allowed;
+}
+
+progress {
+    border-radius: 0%;
+    border: 0px;
+    width: 90%;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+}
+
+.answer {
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.answer a {
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.answer-icon {
+    font-size: 2rem;
+    margin-left: .5rem;
+    justify-content: center;
+    color: #1e3c59;
+}
+
+.answer-icon:hover {
+    opacity: .8;
+}
+
+.answer-icon-vd {
+    color: rgb(175, 3, 3);
+}
+
+.answer-icon-d {
+    color: rgb(189, 86, 6);
+}
+
+.answer-icon-n {
+    color: rgb(215, 230, 11);
+}
+
+.answer-icon-a {
+    color: rgb(9, 158, 49);
+}
+
+.answer-icon-va {
+    color: rgb(2, 70, 24);
+}
+.btn {
+    margin-top: .32rem;
+}
+.btn :hover {
+    opacity: .8;
+}
+.selected {
+    border: 0px solid #1e2022;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    margin-bottom: 0;
+    border-radius: 50%;
+    border-spacing: 0;
+}
+.display {
+    display: none;
+}
+
+.display-graph{
+
+    display: grid;
+
+}
+.test-result-component {
+    margin-top: .6rem;
+    width: 25rem;
+    height: 15rem;
+    border: 1px solid rgb(190, 187, 187);
+    grid-template-columns:13.75rem 9.375rem  
+}
+
+@media screen and (max-width: 1024px) {
+    .test-component {
+        max-height: 15.5rem;
+        width: 30rem;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .main-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .test-nav .btn-response,
+    .test-nav .btn-response:disabled,
+    .test-nav .btn-continue,
+    .test-nav .btn-back {
+        width: 4.2em;
+        height: 1.5em;
+    }
+
+    .test-component .q-text {
+        font-size: .9rem;
+        font-weight: 500;
+        margin-top: .7rem;
+        margin-left: 0;
+        padding: .3rem;
+        height: 3.2rem;
+    }
+
+    .answer {
+        margin-top: 1rem;
+        margin-left: 0;
+        justify-content: center;       
+    }
+
+    .answer p {
+        font-size: 0.9rem;
+    }
+
+    .answer-icon {
+        font-size: 2rem;
+    }
+    .test-result-component {
+        width: 23rem;
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .test-result-component {
+        height: 14rem;
+        width: 23rem;        
+    }
+
+
+}

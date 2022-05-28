@@ -1,0 +1,242 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 997;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    left: 20rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 40%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    margin-top: 5px;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    color: rgb(22, 21, 21);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 8px;
+    background-color: #f2f4f2;
+    color: rgb(16, 15, 15);
+  }
+  .modal-body {
+    display: block;
+    padding: 2px 16px;
+  }
+
+  .modal-body p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+  }
+
+  .modal-body a {
+    font-size: 1rem;
+    color: rgb(97, 97, 116);
+  }
+
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #eef7ee;
+    color: rgb(16, 15, 15);
+  }
+
+
+/*input settings*/
+  input[type=text],
+  input[type=password],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 6px 6px 6px 0;
+    display: inline-block;
+  }
+
+  input[type=button] {
+    background-color: #0491aa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+  }
+
+  .registro {
+    color: rgb(70, 56, 190);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+  }
+  
+  input[type=button]:hover {
+    background-color: #8bb2ec;
+  }
+
+  .container {
+    border-radius: 0px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    left: 30px;
+  }
+
+  .col-35 {
+    float: left;
+    width: 35%;
+    margin-top: 3px;
+  }
+
+  .col-65 {
+    float: left;
+    width: 65%;
+    margin-top: 3px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .err {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 1px;
+  }
+
+  .modal-body img{
+    background-image:url('../images/avatar3.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    top: 0;    
+    width: 5rem;
+    height:5rem ;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer; 
+}
+.modal-body span{
+
+    justify-content: center;
+    align-items: center;
+    left: 40%;
+
+}
+
+  @media screen and (max-width: 1024px) {
+
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .modal-content {
+      left: 10rem;
+      width: 50%;
+    }
+
+    .container {
+      width: 90%;
+    }
+
+    .registro {
+      padding: 3px 10px;
+      margin-top: 4px;
+      margin-left: 10px;
+      width: 80%;
+    }
+    .col-35,
+    .col-65,
+    input[type=button],
+    a {
+      width: 100%;
+      margin-top: 4px;       
+    }
+
+    input[type=text],
+    input[type=password],
+    select,
+    textarea {
+      width: 90%;
+      height: 1.2rem;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 4px 4px 4px 0;
+      display: inline-block;
+    }
+
+    
+  }

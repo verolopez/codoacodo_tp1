@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/Layout.css">
+  <link rel="stylesheet" href="styles/navbase.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <script src="https://kit.fontawesome.com/18c51a0ce1.js" crossorigin="anonymous">
+
+  </script>
+
+</head>
+
+<body>
+  <nav id="sidenav" class="sidenav">
+    <ul>
+        <li>
+            <a href="index.html">
+                <span class="fas fa-head-side-virus ico"> </span>
+                <span class="sidenav-text">Sobre TDAH
+                </span>
+            </a>
+        </li>
+        <li><a href="videos.HTML">
+            <span class="fa-solid fa-video ico" > </span>
+            <span class="sidenav-text">Videos
+                </span>
+            </a>
+        </li>
+        <li><a href="quetalhoy.html" title="Entrenamiento condutual">
+                <span class="fas fa-gamepad ico"> </span>
+                <span class="sidenav-text">Juguemos
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#" disabled>
+                <span class="fas fa-users ico"> </span>
+                <span class="sidenav-text">Foro</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+  <header id="header">
+    <div>
+      <span class="fas fa-bars" onclick="TogleNav()"></span>
+      <img src="images/logo.png" alt="Logo" />
+      <span class="">TP1.0</span>
+      <span class="user">
+        <a href="#">
+           <img id="user" onclick="setUserLoged()" class="userlogout" />
+        </a>
+      </span>
+    </div>
+  </header>
+  <main id="main">
+    <div class="main-content">
+     <h2> Videos </h2>
+        <p>Esta seccion muestra videos interesantes donde puedes informarte mas acerca del TDAH.</p>
+        <div class="grid-container">
+            <div class="grid-item">
+              <iframe width="180" height="150" src="https://www.youtube.com/embed/Hf3UDfp-qUs" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              <div>
+                    <h4>Pablito un nino con TDAH</h4>
+                </div>
+            </div>
+            <div class="grid-item">
+              <iframe width="180" height="150" src="https://www.youtube.com/embed/CKxQ6XYaKcU" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+              <div>
+                    <h4>TDAH en adultos</h4>
+                </div>
+            </div>
+            <div class="grid-item">
+              <iframe width="180" height="150" src="https://www.youtube.com/embed/FOs5CWp3Qr0" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+              <div>
+                    <h4>12 ejercicios para ninos con TDAH</h4>
+                </div>
+            </div>
+            <div class="grid-item">
+              <iframe width="180" height="150" src="https://www.youtube.com/embed/gWmCd201IHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div>
+                    <h4>TDAH en adultos</h4>
+                </div>
+            </div>
+            <div class="grid-item">
+              <iframe width="180" height="150" src="https://www.youtube.com/embed/Ylggcn1MBHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div>
+                    <h4>TDAH en adultos</h4>
+                </div>
+            </div>
+            <div class="grid-item">
+              <iframe width="180" height="150" src="https://www.youtube.com/embed/DuPKIVhcIK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div> <h4>TDAH en adultos</h4>
+                </div>
+            </div>
+
+        </div>
+    
+    <!--
+      Modal para Logueatse
+    -->
+    
+      <article id="modal-login" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Salir</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+       
+            <form action="#cerrar">
+              <div class="row">
+                <div class="col-65">
+                  <span ><img id="userl"/></span> 
+                </div>
+                <div class="col-65">
+                  <label id="lbname"><i class="fa-solid fa-user"></i> Johan J. Smith</label>
+                  <label id="lbCorreo"><i class="fa-solid fa-envelope contact-item"></i>  Johan.j.Smith@gmail.com</label>
+                </div>
+              </div>
+              <div class="row">
+                <input type="button" onclick="setClass('user','userlogout,userlogged');toggleLog('modal-login')"
+                  id="btnLogout" value="Salir">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        </div>
+      </article>
+    <!--
+      Modal para deslogueo
+    -->
+    
+      <article id="modal-logout" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Ingresar</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="#cerrar">
+                <div class="row" id="dname" hidden>
+                  <div class="col-35">
+                    <label for="lname">Nombre</label>
+                  </div>
+                  <div class="col-65">
+                    <input type="text" id="lname" name="lastname" placeholder="Tu nombre..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-35">
+                     <label for="lcorreo">Correo Electronico</label>
+                  </div>
+                  <div class="col-65">
+                    <input type="text" id="lcorreo" required name="lcorreo" onblur="validarEmail(this.value)"
+                      placeholder="Tu correo..">
+                    <label for="" id="lblerr" class="err"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-35">
+                    <label for="fname">Clave</label>
+                  </div>
+                  <div class="col-65">
+                    <input type="password"  id="fclave" required name="fclave" placeholder="Tu clave..">
+                    <label for="fclave" id="lblCampoReq" class="err"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="button" disabled
+                    onclick="setClass('user','userlogout,userlogged');toggleLog('modal-logout')" id="btnLogin"
+                    value="Enviar">
+                  <p class="registro" onClick=""><a href="">No tenes usuario, registrate</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </article>
+  </main>
+
+  <footer id="footer">
+    <div class="copyright">
+        <strong>Copyright &copy; 2021-2022 <a href="#">SER TDAH</a> - </strong><p>All rights reserved.</p> 
+    </div>
+    <div class="version">
+        <b>Version</b> 1.1.0
+    </div>
+    <div class="contacts">
+        <a href="#" alt="" title=""><i class="fa-brands fa-facebook-square contact-item"></i></a>
+        <a href="#" alt="" title=""><i class="fa-brands fa-instagram-square contact-item "></i></a>
+        <a href="#" alt="" Title=""><i class="fa-brands fa-whatsapp-square contact-item"></i></a>
+        <a href="#" alt="" title=""><i class="fa-brands fa-telegram contact-item"></i></a>
+        <a href="#" alt="" title=""><i class="fa-solid fa-envelope contact-item"></i></a>
+        <a href="#" alt="" Title=""><i class="fa-solid fa-square-phone contact-item"></i>
+        </a>
+    </div>
+ </footer>
+ 
+  <script src="js/script.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>

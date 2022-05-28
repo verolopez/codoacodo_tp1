@@ -1,0 +1,72 @@
+header div{
+
+display: grid;
+grid-template-columns: 2em 3em 85% 5%;
+margin-bottom: .18em;  
+border: 0px solid red;
+align-items: top;
+
+}
+
+header span{
+ font-size:  1.5em;
+ cursor:pointer;
+ margin-bottom: .18em;
+ top:0;
+ margin-top: 0;
+ color:#343a40;
+ color:  #343a40;
+ align-items: top;
+}
+
+header img{
+    height:2.4em;
+    width:2.4em;
+}
+
+header .user{
+    justify-content: right;
+    right: 0;
+    font-size: 1.6em;
+    color:  #343a40;
+    align-items: top;
+    border: 0px solid;
+    
+}
+header .user .userlogout{
+    background-image:url('../images/user.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    top: 0;
+    width: 2rem;
+    height:2rem ;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer; 
+}
+header .user .userlogged{
+    background-image:url('../images/avatar3.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    top: 0;
+    width: 2rem;
+    height:2rem ;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer; 
+}
+
+@media screen and (max-width: 1024px) {
+    header div{
+        display: grid;
+        grid-template-columns: 2em 3em 80% 5%;
+    }    
+}
+@media screen and (max-width: 640px) {
+    header div{
+        display: grid;
+        grid-template-columns: 2em 3em 75% 5%;
+    }    
+}

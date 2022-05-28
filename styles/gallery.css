@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.grid-container{
+    display: grid;
+    /*Si no tiene un espacio de 360px se va para abajo.*/
+    grid-template-columns: repeat(auto-fit , minmax(240px, 1fr));
+
+    /*Para que la imagen se separe un poco*/
+    grid-gap: 1rem;
+}
+
+iframe{
+    width: 100%; /*Para que la imagen se ajuste al container*/
+    border-radius: 1rem;
+}
+.grid-item{
+
+    /*Para modificar la imagen de adentro transformo el item en un container*/
+    display: grid;
+    border: 1px dotted darkgray;
+    grid-template-rows: 150px 30px;
+    padding: .5rem;
+    /*Si quiero separar el texto de las imagenes.*/
+    grid-gap: 0.2rem;
+}

@@ -1,0 +1,284 @@
+{
+    "items": [
+        {
+            "id": "1",
+            "pref": "wakeup.png",
+            "value": "Como me levante hoy?",
+            "class": "fas fa-face-frown-open answer-icon"
+        },
+        {
+            "id": "2",
+            "pref": "getdressed.png",
+            "value": "Pude vestirme solo?",
+            "class": "fas fa-face-smile answer-icon"
+        },
+        {
+            "id": "3",
+            "pref": "breackfast.png",
+            "value": "Desayune solo?",
+            "class": "fas fa-face-frown answer-icon"
+        },
+        {
+            "id": "4",
+            "pref": "wahteeth.png",
+            "value": "Me lave los dientes solo?",
+            "class": "fas fa-face-meh answer-icon"
+        },
+        {
+            "id": "5",
+            "pref": "goingschool.png",
+            "value": "Fui contento al cole?",
+            "class": "fas fa-face-laugh answer-icon"
+        },
+        {
+            "id": "6",
+            "pref": "dohomework.png",
+            "value": "Pude copiar la tarea?",
+            "class": "fas fa-face-smile answer-icon"
+        },
+        {
+            "id": "7",
+            "pref": "meetfriends.png",
+            "value": "Pude jugar con mis amigos?",
+            "class": "fas fa-face-frown answer-icon"
+        },
+        {
+            "id": "8",
+            "pref": "atlunch.png",
+            "value": "Almorce con mis amigos?",
+            "class": "fas fa-face-meh answer-icon"
+        },
+        {
+            "id": "9",
+            "pref": "goinghome.png",
+            "value": "Volvi contento a casa?",
+            "class": "fas fa-face-meh answer-icon"
+        },
+        {
+            "id": "10",
+            "pref": "atpark.png",
+            "value": "Pude jugar en el parque?",
+            "class": "fas fa-face-laugh answer-icon"
+        },
+        {
+            "id": "11",
+            "pref": "readabook.png",
+            "value": "Pude hacer la tarea?",
+            "class": "fas fa-face-smile answer-icon"
+        },
+        {
+            "id": "12",
+            "pref": "atshower.png",
+            "value": "Me bane sin hacer lio?",
+            "class": "fas fa-face-laugh answer-icon"
+        },
+        {
+            "id": "13",
+            "pref": "washhands.png",
+            "value": "Me lave las manos antes de cenar?",
+            "class": "fas fa-face-smile answer-icon"
+        },
+        {
+            "id": "14",
+            "pref": "breackfast.png",
+            "value": "Desayune solo?",
+            "class": "fas fa-face-frown answer-icon"
+        },
+        {
+            "id": "15",
+            "pref": "havedinner.png",
+            "value": "Cene tranquilo en familia?",
+            "class": "fas fa-face-frown answer-icon"
+        },
+        {
+            "id": "16",
+            "pref": "gotobed.png",
+            "value": "Fui a dormir a horario?",
+            "class": "fas fa-face-meh answer-icon"
+        }
+    ],
+    "questions": [
+        {
+            "id": "1",
+            "question": "No hablo mucho en situaciones sociales.",
+            "type": 1,
+            "type_desc": "Hiperactividad"
+        },
+        {
+            "id": "2",
+            "question": "A menudo me siento inquieto.",
+            "type": 1,
+            "type_desc": "Hiperactividad"
+        },
+        {
+            "id": "3",
+            "question": "Las tareas aburridas o repetitivas no pueden mantener mi atención.",
+            "type": 2,
+            "type_desc": "Desatencion"
+        },
+        {
+            "id": "4",
+            "question": "Siempre estoy 'en movimiento' y me siento obligado a estar constantemente en acción.",
+            "type": 1,
+            "type_desc": "Hiperactividad"
+        },
+        {
+            "id": "5",
+            "question": "A veces suelto respuestas de repente o termino las frases de otras personas.",
+            "type": 3,
+            "type_desc": "Impulsividad"
+        },
+        {
+            "id": "6",
+            "question": "Interrumpo o molesto a los demás cuando están ocupados.",
+            "type": 3,
+            "type_desc": "Impulsividad"
+        },
+        {
+            "id": "7",
+            "question": "Rara vez pierdo o extravío cosas.",
+            "type": 4,
+            "type_desc": "Olvido"
+        },
+        {
+            "id": "8",
+            "question": "Puedo poner en orden mis cosas fácilmente cuando una tarea requiere organización.",
+            "type": 2,
+            "type_desc": "Desatencion"
+        },
+        {
+            "id": "9",
+            "question": "Me resulta fácil relajarme y desconectar cuando tengo tiempo para mí mismo.",
+            "type": 7,
+            "type_desc": "D. Emocional"
+        },
+        {
+            "id": "10",
+            "question": "Me muevo constantemente en mi silla y me resulta difícil permanecer sentado durante mucho tiempo. ",
+            "type": 1,
+            "type_desc": "Hiperactividad"
+        },
+        {
+            "id": "11",
+            "question": "Tengo problemas para recordar citas y obligaciones.",
+            "type": 4,
+            "type_desc": "Olvido"
+        },
+        {
+            "id": "12",
+            "question": "Me resulta difícil concentrarme en lo que dicen los demás, incluso cuando me hablan directamente.",
+            "type": 2,
+            "type_desc": "Desatencion"
+        },
+        {
+            "id": "13",
+            "question": "Tengo dificultades para esperar mi turno.",
+            "type": 5,
+            "type_desc": "Inflexibilidad"
+        },
+        {
+            "id": "14",
+            "question": "Una vez que empiezo algo, lo llevo a cabo hasta el final.",
+            "type": 2,
+            "type_desc": "Desatencion"
+        },
+        {
+            "id": "15",
+            "question": "Tengo dificultad para entender los detalles y/o a menudo cometo errores por descuido",
+            "type": 2,
+            "type_desc": "Desatencion"
+        },
+        {
+            "id": "16",
+            "question": "Me distraigo fácilmente con el ruido o la actividad a mi alrededor.",
+            "type": 2,
+            "type_desc": "Desatencion"
+        },
+        {
+            "id": "17",
+            "question": "Con frecuencia dejo mi asiento en reuniones u otras situaciones en las que se espera que permanezca sentado.",
+            "type": 1,
+            "type_desc": "Hiperactividad"
+        },
+        {
+            "id": "18",
+            "question": "De niño, tuve dificultades para aprender a abrocharme la ropa y/o atarme los cordones de los zapatos.",
+            "type": 6,
+            "type_desc": "R. de desarrollo"
+        },
+        {
+            "id": "19",
+            "question": "Me vuelvo fácilmente agresivo verbal o físicamente cuando estoy enfadado.",
+            "type": 7,
+            "type_desc": "D. Emocional"
+        },
+        {
+            "id": "20",
+            "question": "De niño, mis padres y/o maestros se preocupaban por el ritmo al que aprendía a hablar.",
+            "type": 6,
+            "type_desc": "R. de desarrollo"
+        },
+        {
+            "id": "21",
+            "question": "Me lleva mucho tiempo calmarme después de experimentar emociones intensas.",
+            "type": 7,
+            "type_desc": "D. Emocional"
+        },
+        {
+            "id": "22",
+            "question": "Tiendo a excitarme demasiado.",
+            "type": 7,
+            "type_desc": "D. Emocional"
+        },
+        {
+            "id": "23",
+            "question": "Cuando era niño, era difícil para mí realizar actividades basadas en el equilibrio,como la gimnasia.",
+            "type": 6,
+            "type_desc": "R. de desarrollo"
+        },
+        {
+            "id": "24",
+            "question": "Tengo días en los que casi todo me pone de los nervios.",
+            "type": 7,
+            "type_desc": "D. Emocional"
+        },
+        {
+            "id": "25",
+            "question": "Se me olvidan incluso las citas cruciales.",
+            "type": 4,
+            "type_desc": "Olvido"
+        }
+    ],
+    "answerlevel": [
+        {
+            "id": "1",
+            "pref": "Q_MD_",
+            "value": "Muy en Desacuerdo",
+            "class": "fas fa-face-frown-open answer-icon"
+        },
+        {
+            "id": "2",
+            "pref": "Q_D_",
+            "value": "En Desacuerdo",
+            "class": "fas fa-face-frown answer-icon"
+        },
+        {
+            "id": "3",
+            "pref": "Q_PA_",
+            "value": "Parcial Acuerdo",
+            "class": "fas fa-face-meh answer-icon"
+        },
+        {
+            "id": "4",
+            "pref": "Q_A_",
+            "value": "De Acuerdo",
+            "class": "fas fa-face-smile answer-icon"
+        },
+        {
+            "id": "5",
+            "pref": "Q_MA_",
+            "value": "Muy de Acuerdo",
+            "class": "fas fa-face-laugh answer-icon"
+        }
+    ]
+}
