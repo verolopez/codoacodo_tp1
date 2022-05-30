@@ -1,7 +1,7 @@
 html, body 
 {  
   overflow-x: hidden;  
-  min-height: max-content; 
+  
 }
 * {
 	margin:0;
@@ -60,8 +60,11 @@ body {
     margin-bottom: 0;
   }
  
-  header, footer{
+  header{
     background-color:#f1f1f1;
+  }
+  footer{
+    background-color:#fac980;
   }
 
    @media screen and (max-width:1024px )  {
@@ -75,12 +78,12 @@ body {
     }
     
     footer{
-        bottom: 0;
+        bottom: 0!important;
     }
      
    @media screen and (max-width: 640px)
     {
-     #header, #main, #footer {
+     header, main, footer {
          margin-left: 0px;       
     }  
     footer {
